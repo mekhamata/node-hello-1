@@ -31,3 +31,6 @@ stages:
         containerRegistry: 'Dockerhub'
         repository: 'mikhamatta/hello-node-1'
         command: 'push'
+    - task: TerraformInstaller@0
+      inputs:
+        terraformVersion: 'latest'
