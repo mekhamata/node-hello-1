@@ -34,3 +34,8 @@ stages:
     - task: TerraformInstaller@0
       inputs:
         terraformVersion: 'latest'
+    - task: TerraformCLI@0
+      inputs:
+        command: 'init'
+        backendType: 'aws'
+        allowTelemetryCollection: true
